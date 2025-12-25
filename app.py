@@ -69,7 +69,7 @@ def recommend_products(user_query, top_n=10):
 st.title("🛒 E-Commerce Product Recommendation System")
 
 query = st.text_input(
-    "Search product (example: nike shoes 8000-10000)"
+    "Search product (example: smartphones, laptops ,sneakers shoes 8000-10000)"
 )
 
 if st.button("Recommend"):
@@ -82,3 +82,4 @@ if st.button("Recommend"):
             st.write(
                 f"**{row['product_name']}** | ₹{row['price']}"
             )
+
